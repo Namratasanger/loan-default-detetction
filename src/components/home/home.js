@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Button,
   Container,
@@ -11,16 +12,28 @@ export default function Home() {
     <Container className="home-main-page">
       <div className="wrapper">
         <NavigationBar>
-          <div>Home</div>
-          <div>Github</div>
-          <div>Contact</div>
+          <Link to="/home">Home</Link>
+          <div
+            onClick={() => {
+              window.open(
+                "https://github.com/Namratasanger/loan-default-detetction",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
+          >
+            Github
+          </div>
+          <Link to="/developers">Developers</Link>
         </NavigationBar>
 
-        <Content className="home-page-content">
+        <Content>
           <div className="project-title">
             Loan Default <span>Detection</span>
           </div>
-          <Button className="button-predict">Predict</Button>
+          <Button to="/predict">
+            <span>Predict</span>
+          </Button>
         </Content>
       </div>
     </Container>
