@@ -1,5 +1,26 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import backgroundImage from "images/money-plant.png";
+
+export const Container = styled.div`
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: ${(props) =>
+    props?.children?.props?.theme?.isBackground
+      ? `url(${backgroundImage})`
+      : "none"};
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  .wrapper {
+    padding: 16px;
+    height: calc(100% - 32px);
+  }
+`;
 
 export const NavigationBar = styled.div`
   display: flex;
