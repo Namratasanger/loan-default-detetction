@@ -55,5 +55,6 @@ export const Button = styled(Link)`
   &:hover {
     border: 1px solid #6157c9;
     background-color: #6157c9;
+    color: #ffffff;
   }
 `;

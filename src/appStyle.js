@@ -17,6 +17,7 @@ export const Container = styled.div`
   background-position: center;
   position: relative;
   .wrapper {
+    // background: #f5f5f5;
     padding: 16px;
     height: calc(100% - 32px);
   }
