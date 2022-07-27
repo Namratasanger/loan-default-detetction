@@ -33,7 +33,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/home" element={<Home />}></Route>
-            <Route path="/developers" element={<Developers />}></Route>
             <Route path="/predict" element={<Predict />}></Route>
           </Routes>
         </div>
