@@ -1,6 +1,5 @@
 import { Route, Routes, Link, useLocation } from "react-router-dom";
 import Home from "components/home/home";
-import Developers from "components/developers/developers";
 import Predict from "components/predict/predict";
 import { Container, NavigationBar } from "./appStyle.js";
 import "antd/dist/antd.css";
@@ -28,7 +27,6 @@ function App() {
             >
               Github
             </div>
-            <Link to="/developers">Developers</Link>
           </NavigationBar>
           <Routes>
             <Route path="/" element={<Home />}></Route>
